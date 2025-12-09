@@ -7,3 +7,15 @@ How frequently would you like me to update you on my progress — daily or twice
 After completing the courses, what level of proficiency is expected from me as an intern?
 
 If I have doubts, should I collect them and schedule one weekly meeting, or reach out whenever needed?
+
+
+cust_count_alt =
+CALCULATE(
+    COUNTROWS(VALUES(SampleSuperstore[Customer ID]))
+)
+
+cust_count_south =
+CALCULATE(
+    COUNTROWS(VALUES(SampleSuperstore[Customer ID])),
+    SampleSuperstore[Region] = "South"
+)
