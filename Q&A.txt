@@ -19,19 +19,21 @@ CALCULATE(
     COUNTROWS(VALUES(SampleSuperstore[Customer ID])),
     SampleSuperstore[Region] = "South"
 )
+
+
+
 merging duplicate rows
-Name Display =
-VAR CurrentName = SELECTEDVALUE(Table[name])
-VAR PrevName =
+Name Display = 
+VAR CurrentName = SELECTEDVALUE(SampleSuperstore[Customer Name])
+VAR FirstCategory =
     CALCULATE(
-        MAX(Table[name]),
-        FILTER(
-            ALLSELECTED(Table),
-            Table[Index] = MAX(Table[Index]) - 1
-        )
+        MIN(SampleSuperstore[Category]),
+        ALLEXCEPT(SampleSuperstore, SampleSuperstore[Customer Name])
     )
+VAR CurrentCategory = SELECTEDVALUE(SampleSuperstore[Category])
+
 RETURN
-IF(CurrentName = PrevName, BLANK(), CurrentName)
+IF(CurrentCategory = FirstCategory, CurrentName, BLANK())
 
 ⭐ Easier Alternative (No DAX)
 
