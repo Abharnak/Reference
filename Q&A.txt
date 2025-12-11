@@ -19,3 +19,24 @@ CALCULATE(
     COUNTROWS(VALUES(SampleSuperstore[Customer ID])),
     SampleSuperstore[Region] = "South"
 )
+merging duplicate rows
+Name Display =
+VAR CurrentName = SELECTEDVALUE(Table[name])
+VAR PrevName =
+    CALCULATE(
+        MAX(Table[name]),
+        FILTER(
+            ALLSELECTED(Table),
+            Table[Index] = MAX(Table[Index]) - 1
+        )
+    )
+RETURN
+IF(CurrentName = PrevName, BLANK(), CurrentName)
+
+⭐ Easier Alternative (No DAX)
+
+If your table is sorted by Name → Subject:
+
+Go to Format → Values
+
+Turn Show “Repeat Values” = Off
