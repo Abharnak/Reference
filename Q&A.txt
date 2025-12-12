@@ -59,4 +59,32 @@ IF (
     SalesValue,
     Status   // "sold out", "not in stock", etc.
 )
+Customer Sales or Status =
+VAR AllAvailable =
+    CALCULATE(
+        MIN(Table[Availability]),
+        ALLEXCEPT(Table, Table[Customer])
+    ) = "available"
+
+VAR AnyUnavailable =
+    CALCULATE(
+        MAX(Table[Availability]),
+        ALLEXCEPT(Table, Table[Customer])
+    ) <> "available"
+
+VAR TotalSales =
+    CALCULATE(
+        SUM(Table[Sales]),
+        ALLEXCEPT(Table, Table[Customer])
+    )
+
+RETURN
+IF(
+    AllAvailable,
+    TotalSales,
+    CALCULATE(
+        SELECTEDVALUE(Table[Availability]),
+        ALLEXCEPT(Table, Table[Customer])
+    )
+)
 
