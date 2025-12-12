@@ -42,3 +42,21 @@ If your table is sorted by Name → Subject:
 Go to Format → Values
 
 Turn Show “Repeat Values” = Off
+
+
+
+
+
+
+Value by SubCategory =
+VAR CurrentSubCat = SELECTEDVALUE(Table[Sub Category])
+VAR Status = SELECTEDVALUE(Table[Available])
+VAR SalesValue = SELECTEDVALUE(Table[Sales])
+
+RETURN
+IF (
+    Status = "available",
+    SalesValue,
+    Status   // "sold out", "not in stock", etc.
+)
+
