@@ -22,3 +22,5 @@ SWITCH(
     "Total","#252423",BLANK())
 ```
 
+8. Filter customer name by sales value by right clicking on 3 dots select sort choose sales measure created and then ascending or descending.
+   <img width="884" height="348" alt="image" src="https://github.com/user-attachments/assets/697487ed-7450-4737-b6c8-cee67d42b75f" />
