@@ -1,4 +1,18 @@
-## 1. How to bring total column in first position in matrix visual
+To do:
+- organize measures ->create table, folders 1_,2_,..
+<img width="10" height="40" alt="image" src="https://github.com/user-attachments/assets/665eec51-4b96-4025-8d59-0b48e0d10835" />
+
+- create table to show totcolumn front for solution,inc
+- total column front & bold no CG
+- Same column Width use measure, auto column width
+- Tooltip
+- name measures meaningfully
+- document measures and their relation between each other
+- 
+
+# Tips
+- alt+ctrl+shift+L => delects all same value
+# 1. How to bring total column in first position in matrix visual
 
 Reference: "https://www.youtube.com/watch?v=VRUs0pWgsdE"
 
@@ -24,3 +38,5 @@ SWITCH(
 
 8. Filter customer name by sales value by right clicking on 3 dots select sort choose sales measure created and then ascending or descending.
    <img width="884" height="348" alt="image" src="https://github.com/user-attachments/assets/697487ed-7450-4737-b6c8-cee67d42b75f" />
+
+# 2. How to add custom column Tooltip in Matrix
