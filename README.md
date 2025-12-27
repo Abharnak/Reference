@@ -1,14 +1,19 @@
 To do:
+
 - organize measures ->create table, folders 1_,2_,..
 <img width="10" height="40" alt="image" src="https://github.com/user-attachments/assets/665eec51-4b96-4025-8d59-0b48e0d10835" />
 
-- create table to show totcolumn front for solution,inc
+- create table to show total column front for solution,inc
 - total column front & bold no CG
 - Same column Width use measure, auto column width
+- Lock the objects in dashboard View->Lock Objects
+- align objects using Format->Align Top->vertically
 - Tooltip
 - name measures meaningfully
 - document measures and their relation between each other
-- 
+- apply slicers button -> affects all slicers including field parameter
+- create bookmark for each view to navigate between show and hide filters
+- can use field parameter to show only necessary  columns in matrix visualbased on user
 
 # Tips
 - alt+ctrl+shift+L => delects all same value
