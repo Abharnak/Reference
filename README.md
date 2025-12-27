@@ -1,5 +1,7 @@
 ## 1. How to bring total column in first position in matrix visual
 
+Reference: "https://www.youtube.com/watch?v=VRUs0pWgsdE"
+
 1. Create new table in power query with columns that will be used in matrix view
 <img width="449" height="580" alt="image" src="https://github.com/user-attachments/assets/781809b5-ea19-4303-ba70-8c6b01da5510" />
 
