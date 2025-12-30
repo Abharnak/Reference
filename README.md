@@ -44,4 +44,8 @@ SWITCH(
 8. Filter customer name by sales value by right clicking on 3 dots select sort choose sales measure created and then ascending or descending.
    <img width="884" height="348" alt="image" src="https://github.com/user-attachments/assets/697487ed-7450-4737-b6c8-cee67d42b75f" />
 
-# 2. How to add custom column Tooltip in Matrix
+# 2. Visual Level Calculation RANK()💡| Sort Matrix visual
+reference : https://www.youtube.com/watch?v=nt-_dwCZ1Jk
+
+<img width="464" height="326" alt="image" src="https://github.com/user-attachments/assets/b14b4620-0adf-4086-942c-aaa330348c1e" />
+
