@@ -17,6 +17,12 @@ To do:
 
 # Tips
 - alt+ctrl+shift+L => delects all same value
+  
+# How to apply clear all slicer for hidden filters?
+ - create a new bookmark(clear) where no slicers are applied
+ - instead of clear all slicers replace to bookmark, navigate to "clear", set data and all visuals as checed in
+ - if necessary also create bookmark(clear-show) where filters pane is visible and create new clear all button for that bookmark in show
+   
 # 1. How to bring total column in first position in matrix visual
 
 Reference: "https://www.youtube.com/watch?v=VRUs0pWgsdE"
